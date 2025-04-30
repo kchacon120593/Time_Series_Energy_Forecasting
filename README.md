@@ -22,11 +22,31 @@ To develop, compare, and visualize time series models that can support decision-
 
 ## 📂 Dataset
 
-- **Source:** UCI Machine Learning Repository  
+- **Source:** Kaggle Datasets
   [Electricity consumption UK 2009-2024](https://www.kaggle.com/datasets/albertovidalrod/electricity-consumption-uk-20092022)
 
 - **Description:** National Grid ESO is the electricity system operator for Great Britain. They have gathered information of the electricity demand in Great Britain from 2009. The is updated twice an hour, which means 48 entries per day. This makes this dataset ideal for time series forecasting
 
 ---
 
+## 🧪 How to Run
+
+- **Clone this repository:**
+git clone https://github.com/your-username/time-series-energy-forecasting.git
+cd time-series-energy-forecasting
+
+- **Open the Jupyter notebook:**
+jupyter notebook notebooks/time_series_forecasting.ipynb
+
+- **Run the notebook cells to:**
+  - Load and preprocess the dataset
+  - Use functions from the .py scripts inside src/
+  -  Train ARIMA, XGBoost, and Prophet models
+  - Visualize forecast results
+
+---
+
+## 🧠 Future Work
+  - Extend to deep learning models (LSTM, Transformer)
+  - Automate pipeline and deploy as API (MLOps)
 
