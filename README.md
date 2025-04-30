@@ -11,7 +11,7 @@ To develop, compare, and visualize time series models that can support decision-
 ---
 
 ## 🧠 Methods Used
-- **Data Preprocessing:** Resampling, missing value handling
+- **Data Preprocessing:** Data loading and Indexing
 - **Time Series Models:**
   - ARIMA (AutoRegressive Integrated Moving Average)
   - XGBoost
@@ -32,11 +32,11 @@ To develop, compare, and visualize time series models that can support decision-
 ## 🧪 How to Run
 
 - **Clone this repository:**
-git clone https://github.com/your-username/time-series-energy-forecasting.git
-cd time-series-energy-forecasting
+  - git clone https://github.com/kchacon120593/time-series-energy-forecasting.git
+  - cd time-series-energy-forecasting
 
 - **Open the Jupyter notebook:**
-jupyter notebook notebooks/time_series_forecasting.ipynb
+  - time_series_forecasting.ipynb
 
 - **Run the notebook cells to:**
   - Load and preprocess the dataset
