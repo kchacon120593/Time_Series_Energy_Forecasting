@@ -4,11 +4,14 @@ install_if_missing("pandas")
 install_if_missing("numpy")
 install_if_missing("matplotlib")
 install_if_missing("seaborn")
+install_if_missing("statsmodels")
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from statsmodels.tsa.seasonal import seasonal_decompose
+
 color_pal = sns.color_palette()
 
 
@@ -105,3 +108,26 @@ def demand_by_Hour(df):
     plt.legend(['National Demand'])
     plt.xlabel('Period')
     plt.ylabel('Demain (MW)')
+    
+def decompose_seasonality(df, period):
+
+
+    """
+    Decomposes the time series into trend, seasonal, and residual components.
+        
+    Args:
+        df(pd.DataFrame): A DataFrame with a DateTimeIndex and a single column representing demand in MW
+    
+    Returns:
+        None: This function displays a plot and does not return any value.
+        """
+        
+    if not isinstance(df.index, pd.DatetimeIndex):
+        raise ValueError('DataFrame index must be a DateTimeIndex')
+    
+    if df.shape[1] != 1:
+        raise ValueError('DataFrame must have exactly one column representing demand')
+        
+    result = seasonal_decompose(df, model='multiplicative', period=period)  # Adjust period as needed
+    result.plot()
+    plt.show()
