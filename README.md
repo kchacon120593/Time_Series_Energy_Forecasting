@@ -41,7 +41,7 @@ To develop, compare, and visualize time series models that can support decision-
 - **Run the notebook cells to:**
   - Load and preprocess the dataset
   - Use functions from the .py scripts inside src/
-  -  Train ARIMA, XGBoost, and Prophet models
+  -  Train XGBoost, and Prophet models
   - Visualize forecast results
 
 ---
