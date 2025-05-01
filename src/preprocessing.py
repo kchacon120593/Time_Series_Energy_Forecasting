@@ -13,8 +13,8 @@ def load_data(path, timestamp_Col, demand_Col):
 
     Args:
         path(string): Filepath
-        timestamp_Col(string): Column name of Timestamp values
-        demand_Col(string): Column name of Demand values  
+        timestamp_Col(string): The name of the Timestamp column in the File
+        demand_Col(string): The name of the Demand column in the File
 
     Returns:
         df(pd.DataFrame): A Pandas DataFrame with a timestamp and a numeric column representing demand in MW  
@@ -37,7 +37,7 @@ def preprocess_data(df, timestamp_Col):
 
     Args:
         df(pd.DataFrame): Pandas Dataframe with Timenstamp and Demand columns
-        timestamp_Col(string): Column name of Timestamp values
+        timestamp_Col(string): The name of the Timestamp column in the DataFrame
 
     Returns:
         df(pd.DataFrame): A Pandas DataFrame with a DateTime Index and a single column representing National Demand in MW
