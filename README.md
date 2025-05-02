@@ -1,6 +1,6 @@
 # ⏱️ Time Series Forecasting – Energy Consumption
 
-This project explores time series forecasting methods to predict future household energy consumption. Using historical electricity usage data, it applies both statistical (ARIMA) and machine learning (XGBoost & Facebook Prophet) models to detect trends, seasonality, and make short-term hourly forecasts.
+This project explores time series forecasting methods to predict future household energy consumption. Using historical electricity usage data, it applies machine learning (XGBoost & Facebook Prophet) models to detect trends, seasonality, and make short-term hourly forecasts.
 
 ---
 
@@ -13,7 +13,6 @@ To develop, compare, and visualize time series models that can support decision-
 ## 🧠 Methods Used
 - **Data Preprocessing:** Data loading and Indexing
 - **Time Series Models:**
-  - ARIMA (AutoRegressive Integrated Moving Average)
   - XGBoost
   - Facebook Prophet
 - **Forecast Evaluation & Visualization**
